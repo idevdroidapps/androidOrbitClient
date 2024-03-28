@@ -22,7 +22,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    val greeting = com.campbell.orbit.Greeting().greet()
+                    Greeting(greeting)
                 }
             }
         }
